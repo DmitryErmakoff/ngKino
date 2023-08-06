@@ -1,0 +1,47 @@
+.container {
+  margin: 0 auto 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.image {
+  width: 370px;
+  height: 250px;
+}
+
+mat-card {
+  background-color: rgb(39, 49, 112);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-right: 5px;
+}
+
+.button_one {
+  width: 132px!important;
+}
+
+.button_two {
+  width: 170px!important;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+

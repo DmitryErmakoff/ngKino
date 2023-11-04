@@ -1,0 +1,19 @@
+<div class="modal-container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Название фильма</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Ссылка на изображение</mat-label>
+      <input type="url" matInput formControlName="image">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Дата выхода</mat-label>
+      <input type="date" matInput formControlName="date">
+    </mat-form-field>
+    <button class="button" type="submit" color="primary" style="margin-right: 5px;" mat-flat-button>
+      {{isNew ? "Добавить" : "Обновить"}}</button>
+    <button class="button" type="button" color="primary" mat-flat-button (click)="onNoClick()" >Отмена</button>
+  </form>
+</div>

@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="example-spacer"></span>
+    <div class="toolbar no-select">
+      Избранные фильмы
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<app-movies [globalMovies]="all_movies" [style]="hidden" [movies]="moviesFavorite"></app-movies>
+
